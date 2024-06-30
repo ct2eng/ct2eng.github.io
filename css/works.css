@@ -59,7 +59,8 @@
   overflow: hidden;
 }
 .right_card  .card:hover .card__image {
-  filter: contrast(70%);
+  /* filter: contrast(70%); */
+  filter: grayscale(0);
 }
 .right_card .card__content {
   display: flex;
@@ -73,7 +74,8 @@
   background-size: cover;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-  filter: contrast(100%);
+  /* filter: contrast(100%); */
+  filter: grayscale(1);
   overflow: hidden;
   position: relative;
   transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
@@ -94,17 +96,21 @@
 .right_card .card__image--groupins {
   background-image: url(../img/works/goupins/home3.png);
 }
+.right_card .card__image--happiness {
+  background-image: url(../img/works/happiness/2.png);
+}
 .right_card .card__title {
+  font-family: "Playwrite DE Grund", cursive;
   color: #696969;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .right_card .card__text {
   flex: 1 1 auto;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 2;
   margin-bottom: 1.25rem;
 }
 

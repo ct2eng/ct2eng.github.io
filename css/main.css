@@ -13,9 +13,54 @@
   src: url('../font/Playwrite_DE_Grund/PlaywriteDEGrund-VariableFont_wght.ttf') format('truetype');
 }
 
-p, body, span, h5, .d-inline, .timeline-title{
+.timeline-content, .timeline-info{
+  /* font-family: "Merienda", cursive; */
+}
+
+p {
+  color: #67717d;
+  /* font-size: 18px; */
+  line-height: 35px;
+  font-weight: 400;
+  /* margin-bottom: 60px; */
+}
+small, .small {
+  font-size: 83%;
+}
+p, body, h5, .d-inline, .timeline-title{
   font-family: "Playwrite DE Grund", cursive;
 }
+
+a {
+  color:#4d5763;
+}
+
+
+span{
+  color: #67717d;
+  font-size: 14px;
+  /* line-height: 35px; */
+  /* font-weight: 400; */
+}
+
+ul{
+  list-style-type:disc;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-left: -22px;
+  line-height: 35px;
+}
+
+.d-inline {
+  display: inline !important;
+  color: #d9bf77;
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: 400;
+}
+
+
+
 
 .position{
   font-family: "Merienda", cursive;
@@ -246,31 +291,15 @@ p, body, span, h5, .d-inline, .timeline-title{
   margin-bottom: 23px;
 }
 
-.d-inline {
-  display: inline !important;
-  color: #d9bf77;
-  font-size: 18px;
-  line-height: 35px;
-  font-weight: 400;
-}
 
-p {
-  color: #67717d;
-  font-size: 18px;
-  line-height: 35px;
-  font-weight: 400;
-  /* margin-bottom: 60px; */
-}
-
-span{
-  color: #67717d;
-  font-size: 16px;
-  /* line-height: 35px; */
-  /* font-weight: 400; */
-}
 
 section {
   margin-bottom: 7%;
+}
+
+a:hover, a:focus {
+  color: #d9bf77;
+  text-decoration:none;
 }
 
 
@@ -289,6 +318,18 @@ section {
 }
 
 .resume-button:hover {
+  background-color: #d9bf77;
+  color: #FFF;
+  transform: translateY(2px);
+}
+
+.small_download_btn {
+  color: #d9bf77;
+  cursor:pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.small_download_btn:hover {
   background-color: #d9bf77;
   color: #FFF;
   transform: translateY(2px);
@@ -332,7 +373,7 @@ a, a:hover, a:focus, i, input, button, input:focus, .transition {
   display: inline-block;
   color: #67717d;
   font-size: 12px;
-  padding: 10px 15px;
+  padding: 3px 16px;
   background-color: #FFF;
   border: 1px solid #D7D7D7;
   border-radius: 27px;
@@ -519,7 +560,7 @@ footer {
   margin: 4.5rem auto 0;
   width: 100%;
   border-bottom: 2px dotted #C6D1BF;
-  padding-bottom: .5rem;
+  padding-bottom: 1.5rem;
 }
 
 .quote--highlight {

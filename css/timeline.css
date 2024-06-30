@@ -1,6 +1,7 @@
 /*==================================
       TIMELINE
   ==================================*/
+  
 /*-- GENERAL STYLES
   ------------------------------*/
 .timeline {
@@ -34,9 +35,9 @@
 .timeline-info {
     font-size: 12px;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin: 0 0 0.5em 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     white-space: nowrap;
 }
 
@@ -175,7 +176,10 @@
 
     .timeline-split .period .timeline-title,
     .timeline-centered .period .timeline-title {
+
+        
         position: relative;
         left: -45px;
+        /* font-size: 10px; */
     }
 }
