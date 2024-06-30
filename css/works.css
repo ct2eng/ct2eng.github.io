@@ -1,0 +1,111 @@
+
+.right_card .btn:hover {
+    background-color: #d9bf77;
+    color: #FFF;
+}
+
+.right_card img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.right_card .btn {
+  background-color: white;
+  border: 1px solid #cccccc;
+  color: #696969;
+  padding: 0.5rem;
+  text-transform: lowercase;
+}
+
+.right_card .btn--block {
+  display: block;
+  width: 100%;
+}
+.right_card .cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.right_card .cards__item {
+  display: flex;
+  padding: 1rem;
+  /* transition: transform 0.3s ease; */
+}
+.right_card .cards__item:hover {
+  /* transform: translateY(-5px); */
+}
+
+@media (min-width: 40rem) {
+    .right_card  .cards__item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+    .right_card  .cards__item {
+    /* width: 33.3333%; */
+    width: 50%;
+  }
+}
+.right_card .card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.right_card  .card:hover .card__image {
+  filter: contrast(70%);
+}
+.right_card .card__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+.right_card .card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  filter: contrast(100%);
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  border-bottom: #696969;
+}
+.right_card .card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+  
+}
+@media (min-width: 40rem) {
+    .right_card .card__image::before {
+    padding-top: 66.6%;
+  }
+}
+
+.right_card .card__image--groupins {
+  background-image: url(../img/works/goupins/home3.png);
+}
+.right_card .card__title {
+  color: #696969;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.right_card .card__text {
+  flex: 1 1 auto;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+
