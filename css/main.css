@@ -1,9 +1,33 @@
+@font-face {
+  font-family: 'Playwrite NZ';
+  src: url('../font/Playwrite_NZ/PlaywriteNZ-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Merienda';
+  src: url('../font/Merienda/Merienda-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Playwrite DE Grund';
+  src: url('../font/Playwrite_DE_Grund/PlaywriteDEGrund-VariableFont_wght.ttf') format('truetype');
+}
+
+p, body, span, h5, .d-inline, .timeline-title{
+  font-family: "Playwrite DE Grund", cursive;
+}
+
+.position{
+  font-family: "Merienda", cursive;
+}
+
 
 #right-aside {
   margin-left: 25%;
 }
 
 #left-aside {
+  font-family: "Merienda", cursive;
   height: 100%;
   padding-top: 3em;
   padding-bottom: 40px;
@@ -14,7 +38,7 @@
   position: fixed;
   overflow-y: scroll;
   z-index: 900;
-  background: #f2f3f7;
+  background: #fafafa;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -51,7 +75,7 @@
 
 #left-aside .position {
   display: block;
-  margin-bottom: 2em;
+  margin-bottom: 40px;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -108,7 +132,7 @@
   text-decoration: none;
   position: relative;
   padding: 10px 0;
-  font-family: "Quicksand", Arial, sans-serif;
+  /* font-family: "Quicksand", Arial, sans-serif; */
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -210,6 +234,7 @@
 
 
 .right-heading {
+  font-family: "Merienda", cursive;
   display: inline-block;
   font-weight: 700;
   color: #4d5763;
@@ -398,6 +423,7 @@ a, a:hover, a:focus, i, input, button, input:focus, .transition {
 }
 
 .skill-title {
+  font-family: "Merienda", cursive;
   font-weight: bold;
   margin-bottom: 10px;
   color: #4d5763;
@@ -417,4 +443,92 @@ a, a:hover, a:focus, i, input, button, input:focus, .transition {
   margin-bottom: 10px;
   font-size: 0.9em;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.typing_font{
+  font-family: "Playwrite NZ", cursive;
+  color: #4d5763;
+  /* color: #d9bf77; */
+  font-size: 28px;
+  /* text-decoration: underline; */
+  border-bottom: 2px solid #d9bf77; /* 設定底線顏色 */
+}
+.typing_heading {
+  font-family: "Playwrite NZ", cursive;
+  font-size: 28px;
+  display: inline-block;
+  /* font-weight: 700; */
+  color: #4d5763;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 1px; */
+}
+
+
+
+/* Start Footer*/
+.social, .copyright {
+  padding: 0;
+  /* margin: 1rem; */
+  /* margin-bottom: 20px; */
+}
+.copyright{
+  margin-bottom: 40px;
+}
+
+.social li {
+  display: inline-block;
+  margin: 40px 0 0px 10px ;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 1rem 0;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.social a{
+  color: #b19032;
+}
+
+/* End Footer*/
+
+
+
+
+.quote {
+  margin-left: 28px;
+  position: relative;
+  letter-spacing: .03em;
+  margin-bottom: .5rem;
+  line-height: 50px;
+  
+  &:before {
+      content: "“";
+      position: absolute;
+      left: -.7em;
+  }
+  
+  &:after {
+      content: "”";
+      margin-right: -1rem;
+  }
+}
+
+.quote--container {
+  margin: 4.5rem auto 0;
+  width: 100%;
+  border-bottom: 2px dotted #C6D1BF;
+  padding-bottom: .5rem;
+}
+
+.quote--highlight {
+  color: #D24335;
+}
+
+.quote--author {
+  font-family: 'Open Sans Condensed';
+  font-size: .8rem;
+  text-align: right;
+  font-weight: 300;
 }
