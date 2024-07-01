@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <button id="scrollToTopBtn" title="回到顶部"></button>
+    <button id="scrollToTopBtn" title="回到顶部"><i class="fa-solid fa-angle-up"></i></button>
     <div class="container">
 
         <div id="left-aside" role="complementary" class="border js-fullheight">
@@ -831,12 +831,12 @@
             if (st > lastScrollTop) {
                 // 向下滚动
                 if (st > 20) {
-                    scrollToTopBtn.style.bottom = "20px";
+                    scrollToTopBtn.style.bottom = "40px";
                 }
             } else {
                 // 向上滚动
                 if (st <= 20) {
-                    scrollToTopBtn.style.bottom = "-60px";
+                    scrollToTopBtn.style.bottom = "-80px";
                 }
             }
             lastScrollTop = st <= 0 ? 0 : st; // 为移动端浏览器

@@ -713,8 +713,8 @@ footer {
 
 #scrollToTopBtn {
   position: fixed;
-  bottom: -60px; /* 初始位置在视口下方 */
-  right: 20px;
+  bottom: -80px; /* 初始位置在视口下方 */
+  right: 40px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -733,12 +733,13 @@ footer {
 }
 
 #scrollToTopBtn:hover {
+  color: #b19032;
   background-color: #333;
 }
 
 #scrollToTopBtn::before {
-  content: "↑";
-  font-size: 24px;
+  /* content: "↑";
+  font-size: 24px; */
 }
 
 
