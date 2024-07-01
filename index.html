@@ -22,60 +22,79 @@
 </head>
 
 <body>
-
+    <button id="scrollToTopBtn" title="回到顶部"></button>
     <div class="container">
-        <div>
-            <div id="left-aside" role="complementary" class="border js-fullheight">
-                <div class=" text-center">
-                    <div class="author-img"></div>
-                    <h1 id="left-logo">Chi Tse Teng</h1>
-                    <span class="position">Toronto, ON</span>
-                </div>
-                <nav id="left-main-menu" role="navigation" class="navbar">
-                    <div id="navbar" class="collapse">
-                        <ul id="mainNav">
-                            <li class="active"><a href="#about">About</a></li>
-                            <li><a href="#experience">Experience</a></li>
-                            <li><a href="#works">Works</a></li>
-                            <li><a href="#education">Education</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#certifications">Certifications</a></li>
-                        </ul>
-                    </div>
-                </nav>
 
-                <div class="left-footer">
-                    <ul>
-                        <li><a target="_blank" href="https://www.linkedin.com/in/chitse/"><i
-                                    class="fa-brands fa-linkedin fa-2x"></i></a>
-                        </li>
-                        <li><a target="_blank" href="https://github.com/ct2eng"><i
-                                    class="fa-brands fa-square-github fa-2x"></i></a>
-                        </li>
-                        <li><a target="_blank" href="mailto:b6420535@gmail.com"><i
-                                    class="fa-solid fa-envelope fa-2x"></i></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/hey_man0629"><i
-                                    class="fa-brands fa-square-instagram fa-2x"></i></a></li>
+        <div id="left-aside" role="complementary" class="border js-fullheight">
+            <div class=" text-center">
+                <div class="author-img"></div>
+                <h1 id="left-logo">Chi Tse Teng</h1>
+                <span class="position">Toronto, ON</span>
+            </div>
+            <nav id="left-main-menu" role="navigation" class="navbar">
+                <div id="navbar" class="collapse">
+                    <ul id="mainNav">
+                        <li class="active"><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
                     </ul>
                 </div>
+            </nav>
 
-
+            <div class="left-footer">
+                <ul>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/chitse/"><i
+                                class="fa-brands fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li><a target="_blank" href="https://github.com/ct2eng"><i
+                                class="fa-brands fa-square-github fa-2x"></i></a>
+                    </li>
+                    <li><a target="_blank" href="mailto:b6420535@gmail.com"><i
+                                class="fa-solid fa-envelope fa-2x"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/hey_man0629"><i
+                                class="fa-brands fa-square-instagram fa-2x"></i></a></li>
+                </ul>
             </div>
+
+
         </div>
 
         <div id="right-aside">
 
-            <section>
+            <section id="about">
                 <div class="row">
                     <div class="col-md-12">
+                        <div class="col-md-12 mobile_avatar mobile_hide2">
+                            <div class="circle">
+                                <img height="170" width="170" src="./img/personal_img.jpg" alt="Cloud Chen">
+                            </div>
+                        </div>
+                        <div class="col-md-12 mobile_hide2">
+                            <div class="social_icon">
+                                <ul>
+                                    <li><a target="_blank" href="https://www.linkedin.com/in/chitse/"><i
+                                                class="fa-brands fa-linkedin fa-2x"></i></a>
+                                    </li>
+                                    <li><a target="_blank" href="https://github.com/ct2eng"><i
+                                                class="fa-brands fa-square-github fa-2x"></i></a>
+                                    </li>
+                                    <li><a target="_blank" href="mailto:b6420535@gmail.com"><i
+                                                class="fa-solid fa-envelope fa-2x"></i></a></li>
+                                    <li><a target="_blank" href="https://www.instagram.com/hey_man0629"><i
+                                                class="fa-brands fa-square-instagram fa-2x"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="col-md-12">
-
                             <div class="quote--container">
-
-                                <h1 class="typing_heading quote">Hi, my name is Chi Tse Teng (Adam)<br />
-                                    I am
-                                    <span class="txt-rotate typing_font" data-period="2000"
-                                        data-rotate='[ "System Analyst.", "Developer.", "Software Engineer."]'></span>
+                                <h1 class="typing_heading quote">Hi, my name is Chi Tse Teng (Adam).
+                                    <div class="mobile_hide"><br />I am
+                                        <span class="txt-rotate typing_font" data-period="2000"
+                                            data-rotate='[ "System Analyst.", "Developer.", "Software Engineer."]'></span>
+                                    </div>
                                 </h1>
                                 <p class="quote--author"></p>
 
@@ -83,10 +102,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section id="about">
-                <div class="row">
+                <div class="row" style="margin-top: 50px;">
                     <div class="col-md-12">
                         <div class="col-md-12">
                             <h2 class="right-heading">About Me</h2>
@@ -149,8 +166,9 @@
                                     </div> -->
                                     <div class="timeline-marker"></div>
                                     <div class="timeline-content">
-                                        <h4 class="timeline-title">System Analyst &nbsp;&nbsp;&nbsp;&nbsp; <small>Jan
-                                                2020 - Jun 2022</small></h4>
+                                        <h4 class="timeline-title">System Analyst &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <br /><br /><small>Jan 2020 - Jun 2022</small>
+                                        </h4>
                                         <p class="mb-2">Cathay Life Insurance Company, Ltd.
                                             <small>&nbsp;&nbsp;|&nbsp;&nbsp; Taipei, Taiwan</small>
                                         </p>
@@ -170,8 +188,10 @@
                                 <li class="timeline-item">
                                     <div class="timeline-marker"></div>
                                     <div class="timeline-content">
-                                        <h4 class="timeline-title">Software Engineer &nbsp;&nbsp;&nbsp;&nbsp;<small>Dec
-                                                2018 - Jun 2022</small></h4>
+                                        <h4 class="timeline-title">Software Engineer &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <br /><br /><small>Dec
+                                                2018 - Jun 2022</small>
+                                        </h4>
                                         <p class="mb-2">Cathay Life Insurance Company, Ltd.
                                             <small>&nbsp;&nbsp;|&nbsp;&nbsp; Taipei, Taiwan</small>
                                         </p>
@@ -187,8 +207,10 @@
                                 <li class="timeline-item">
                                     <div class="timeline-marker"></div>
                                     <div class="timeline-content">
-                                        <h4 class="timeline-title">Data Analyst &nbsp;&nbsp;&nbsp;&nbsp;<small>July 2017
-                                                - Jun 2018</small></h4>
+                                        <h4 class="timeline-title">Data Analyst &nbsp;&nbsp;&nbsp;&nbsp;
+                                            <br /><br /><small>July 2017
+                                                - Jun 2018</small>
+                                        </h4>
                                         <p class="mb-2">Sinogreenergy Consultancy Co. Ltd.
                                             <small>&nbsp;&nbsp;|&nbsp;&nbsp; Taipei, Taiwan</small>
                                         </p>
@@ -436,7 +458,7 @@
                                                                                 <span
                                                                                     class="skill-tag">Microservice</span>
                                                                                 <span class="skill-tag">REST APIs</span>
-                                                                                
+
                                                                             </div>
                                                                         </div>
                                                                         <div class="skill-column">
@@ -669,7 +691,7 @@
                         <div class="col-md-12">
                             <div class="row">
                                 <!-- style="width: 200px; height: 270px;" -->
-                                <div class="col-md-4 col-xs-6">
+                                <div class="col-md-4 col-sm-6 col-xs-12 badge_mobile">
                                     <div id="badge" style="width: 200px;">
                                         <a target="_blank"
                                             href="https://badges.iiba.org/472abd60-14ef-40dd-a8bc-6e14d509b3ff">
@@ -695,21 +717,21 @@
 
 
 
-                                <div class="col-md-4 col-xs-6">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div data-iframe-width="200" data-iframe-height="270"
                                         data-share-badge-id="725e0880-37a5-4a9b-a346-c85e1b475264"
                                         data-share-badge-host="https://www.credly.com"></div>
                                     <script type="text/javascript" async
                                         src="//cdn.credly.com/assets/utilities/embed.js"></script>
                                 </div>
-                                <div class="col-md-4 col-xs-6">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div data-iframe-width="200" data-iframe-height="270"
                                         data-share-badge-id="2451c04b-b367-4d7a-a8bf-1b31cc7b8024"
                                         data-share-badge-host="https://www.credly.com"></div>
                                     <script type="text/javascript" async
                                         src="//cdn.credly.com/assets/utilities/embed.js"></script>
                                 </div>
-                                <div class="col-md-4 col-xs-6">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div data-iframe-width="200" data-iframe-height="270"
                                         data-share-badge-id="d72a1969-7d29-4d39-96a2-60c1791d2882"
                                         data-share-badge-host="https://www.credly.com"></div>
@@ -717,7 +739,7 @@
                                         src="//cdn.credly.com/assets/utilities/embed.js"></script>
                                 </div>
 
-                                <div class="col-md-4 col-xs-6">
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div data-iframe-width="200" data-iframe-height="270"
                                         data-share-badge-id="4ec6a829-d217-4cc4-882b-92d7867b19b6"
                                         data-share-badge-host="https://www.credly.com"></div>
@@ -781,6 +803,36 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script>
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        var lastScrollTop = 0;
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var st = window.pageYOffset || document.documentElement.scrollTop;
+            if (st > lastScrollTop){
+                // 向下滚动
+                if (st > 20) {
+                    scrollToTopBtn.style.bottom = "20px";
+                }
+            } else {
+                // 向上滚动
+                if (st <= 20) {
+                    scrollToTopBtn.style.bottom = "-60px";
+                }
+            }
+            lastScrollTop = st <= 0 ? 0 : st; // 为移动端浏览器
+        }
+
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 

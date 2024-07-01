@@ -17,7 +17,7 @@ menuItems.click(function (e) {
         offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
     console.log(offsetTop);
     $('html, body').stop().animate({
-        scrollTop: offsetTop + 128
+        scrollTop: offsetTop + 260
     }, 350);
     e.preventDefault();
 });
@@ -30,7 +30,7 @@ $(window).scroll(function () {
 
     // Get id of current scroll item
     var cur = scrollItems.map(function () {
-        if ($(this).offset().top + 128 < fromTop)
+        if ($(this).offset().top + 260 < fromTop)
             return this;
     });
     // Get the id of the current element
